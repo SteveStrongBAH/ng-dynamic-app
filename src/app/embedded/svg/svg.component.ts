@@ -38,7 +38,7 @@ export class SvgComponent implements OnInit {
     newElement.setAttribute("style", 'fill:green; ');
     this.SVGRoot.appendChild(newElement);  
     
-    this.circleX += 20;
+     this.circleX += 20;
     this.circleY += 10;
     this.circleR += 5;
   }
