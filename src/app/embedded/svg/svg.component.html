@@ -1,7 +1,20 @@
-<svg:g>
+<button type="button" class="btn btn-default" (click)="doAddCircle()">Add Circle</button>
+<button type="button" class="btn btn-default" (click)="doAddShapeComponent(event$)">Add Shape</button>
+
+<svg:svg id="root" #svgcanvas height="300" width="800" style='stroke-width: 2px; background-color: rgb(217, 233, 186);'>
+  <svg:g>
     <svg:polygon class="left" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2" fill="#DD0031"></svg:polygon>
     <svg:polygon class="right" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30" fill="#C3002F"></svg:polygon>
     <svg:path class="a" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
       L125,52.1z M142,135.4H108l17-40.9L142,135.4z" fill="#FFFFFF"></svg:path>
-</svg:g>
+  </svg:g>
+
+  <svg:circle [attr.cx]="cx" [attr.cy]="cy" r="50" fill="#FF00FF" />
+
+  <svg:g app-shape />
+
+</svg:svg>
+
+
+
 

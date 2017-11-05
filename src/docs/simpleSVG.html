@@ -4,22 +4,19 @@
   Demonstrates the Composition of SVG elements backed by <code>SVGComponent</code>.
 </aside>
 
-<svg viewBox="0 0 250 250" style="max-width: 300px">
+<p>Typical SVG rendering</p>
+
+<svg height="300" width="800" style='stroke-width: 2px; background-color: rgb(217, 233, 186);'>
   <polygon class="left" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2" fill="#DD0031"></polygon>
   <polygon class="right" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30" fill="#C3002F"></polygon>
   <path class="a" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
     L125,52.1z M142,135.4H108l17-40.9L142,135.4z" fill="#FFFFFF"></path>
+
+    <rect x="450" y="60" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;opacity:0.9" />
 </svg>
 
-<p>Typical SVG rendering</p>
-
-<svg width="400" height="180" style='stroke-width: 2px; background-color: rgb(217, 233, 186);'>
-  <rect x="50" y="20" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;opacity:0.9" />
-  Sorry, your browser does not support inline SVG.  
-</svg>
 
 <p>Composed SVG rendering</p>
 
-<svg:svg height="400" width="800" style='stroke-width: 2px; background-color: rgb(217, 233, 186);'>
-  <app-svg></app-svg> 
-</svg:svg>
+<app-svg></app-svg> 
+
