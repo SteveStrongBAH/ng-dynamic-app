@@ -47,12 +47,15 @@ export class SvgComponent implements OnInit {
 
     let toolboxComponent = this.resolve.resolveComponentFactory(ShapeXComponent);
     let cmpRef: any = this.svgCanvas.createComponent(toolboxComponent);
+    let instance: ShapeXComponent = cmpRef.instance;
+    console.log(instance);
 
-    setTimeout(function () {
-      if (cmpRef.instance && cmpRef.instance.hasOwnProperty('title')) {
-        cmpRef.instance.title = "Hello SVG";
+    setTimeout(_ => {
+      if (instance && instance.hasOwnProperty('title')) {
+        instance.title = "Hello SVG";
+        console.log(instance);
       }
-    }, 1000);
+    }, 100);
   }
 
 }
