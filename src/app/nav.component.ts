@@ -24,6 +24,8 @@ export class NavComponent {
     {href: 'tutorial/toh-pt2', label: 'Tutorial Master/Detail'},
     {href: 'awesome-fortune', label: 'Awesome Fortune'},
     {href: 'long-story', label: 'The Long Story'},
+    {href: 'simpleSVG', title: 'This time using SVG', label: 'SVG Example'},
     {href: 'not-a-doc', title: 'This doc will not be found', label: 'Bad Doc'},
+   
   ];
 }
