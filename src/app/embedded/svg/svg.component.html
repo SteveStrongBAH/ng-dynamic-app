@@ -1,5 +1,5 @@
 <button type="button" class="btn btn-default" (click)="doAddCircle()">Add Circle</button>
-<button type="button" class="btn btn-default" (click)="doAddShapeComponent(event$)">Add Shape</button>
+<button type="button" class="btn btn-default" (click)="doAddShapeXComponent(event$)">Add Shape</button>
 
 <svg:svg id="root" #svgcanvas height="300" width="800" style='stroke-width: 2px; background-color: rgb(217, 233, 186);'>
   <svg:g>
@@ -11,7 +11,7 @@
 
   <svg:circle [attr.cx]="cx" [attr.cy]="cy" r="50" fill="#FF00FF" />
 
-  <svg:g app-shape [width] = "300" />
+  <svg:g  app-shape  transform="translate (400 20) "/>
 
 </svg:svg>
 

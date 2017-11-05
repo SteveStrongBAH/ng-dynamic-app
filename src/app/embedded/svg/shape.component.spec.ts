@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShapeComponent } from './shape.component';
+import { ShapeXComponent } from './shape.component';
 
-describe('ShapeComponent', () => {
-  let component: ShapeComponent;
-  let fixture: ComponentFixture<ShapeComponent>;
+describe('ShapeXComponent', () => {
+  let component: ShapeXComponent;
+  let fixture: ComponentFixture<ShapeXComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShapeComponent ]
+      declarations: [ ShapeXComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShapeComponent);
+    fixture = TestBed.createComponent(ShapeXComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -24,7 +24,7 @@ import { CurrentLocationComponent } from './current-location/current-location.co
 import { FortuneCookieComponent } from './fortune-cookie/fortune-cookie.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { SvgComponent } from './svg/svg.component';
-import { ShapeComponent } from './SVG/shape.component';
+import { ShapeXComponent } from './svg/shape.component';
 
 /** Components that can be embedded in docs such as CodeExampleComponent */
 export const embeddableComponents: any[] = [
@@ -35,7 +35,7 @@ export const embeddableComponents: any[] = [
   FortuneCookieComponent,
   HeroFormComponent,
   SvgComponent,
-  ShapeComponent
+  ShapeXComponent
 ];
 
 /** Injectable class w/ property returning components that can be embedded in docs */

@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './shape.component.html',
   styleUrls: ['./shape.component.css']
 })
-export class ShapeComponent implements OnInit {
+export class ShapeXComponent implements OnInit {
 
   @Input()
   height: number = 50;
@@ -19,11 +19,12 @@ export class ShapeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("Width", this.width);
   }
 
   doClick() {
-    alert("you clicked the shape")
+    
+    this.width += 30;
+    this.height += 30;
   }
 
 }

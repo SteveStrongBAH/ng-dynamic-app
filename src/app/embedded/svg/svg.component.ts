@@ -2,20 +2,20 @@ import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolve
 
 //https://teropa.info/blog/2016/12/12/graphics-in-angular-2.html
 
-import { ShapeComponent} from './shape.component'
+import { ShapeXComponent} from './shape.component'
 
 @Component({
   selector: 'app-svg',
   templateUrl: './svg.component.html',
-  styleUrls: ['./svg.component.css']
+  styleUrls: ['./svg.component.css'],
 })
 export class SvgComponent implements OnInit {
-  cx:Number = 300;
-  cy:Number = 100;
+  cx:number = 300;
+  cy:number = 100;
 
-  circleX = 400;
-  circleY = 150;
-  circleR = 50;
+  circleX:number = 400;
+  circleY:number = 150;
+  circleR:number = 50;
 
   @ViewChild('svgcanvas',  { read: ViewContainerRef }) svgCanvas;
 
@@ -43,9 +43,9 @@ export class SvgComponent implements OnInit {
     this.circleR += 5;
   }
 
-  doAddShapeComponent(event$) {
+  doAddShapeXComponent(event$) {
 
-    let toolboxComponent = this.resolve.resolveComponentFactory(ShapeComponent);
+    let toolboxComponent = this.resolve.resolveComponentFactory(ShapeXComponent);
     let cmpRef: any = this.svgCanvas.createComponent(toolboxComponent);
 
     setTimeout(function () {
