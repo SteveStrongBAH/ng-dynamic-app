@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -60,6 +60,7 @@ export class EmbeddableComponents {
     FortuneCookieService,
     PrettyPrinter
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   entryComponents: [ embeddableComponents ]
 })
 export class EmbeddedModule { }
